@@ -27,7 +27,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class LabyrinthActivity extends Activity /*implements SensorEventListener*/ /*, RecognitionListener */{
+public class LabyrinthActivity extends Activity implements SensorEventListener /*, RecognitionListener */{
 
     private LabyrinthView labView;
     private LabyrinthModel labModel;
@@ -56,7 +56,7 @@ public class LabyrinthActivity extends Activity /*implements SensorEventListener
     private boolean isEnd = false;
 
     private MainMenu.DIFFICULTY currentDiff;
-
+     //commented
 //    private SpeechRecognizer sr;
 
     private Intent listenIntent;
@@ -411,7 +411,7 @@ public class LabyrinthActivity extends Activity /*implements SensorEventListener
                 this.unregisterSensors();
                 return  true;
             }
-
+             //commented
             /*case SPEECH: {
                 //TODO
                 this.unregisterSensors();
@@ -439,6 +439,7 @@ public class LabyrinthActivity extends Activity /*implements SensorEventListener
 
     public void unregisterSensors() {
         // related to speech recognizer
+        //commented
         /*if(sr != null) {
             sr.stopListening();
             sr.cancel();
@@ -514,6 +515,7 @@ public class LabyrinthActivity extends Activity /*implements SensorEventListener
 
     //speech recognizer
     //--------------------------------------------------
+    //commented
    /* @Override
     public void onReadyForSpeech(Bundle bundle) {
         //Log.d(TAG, "onReadyForSpeech");
